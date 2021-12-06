@@ -1,0 +1,123 @@
+:root {
+    --height: 100vh;
+}
+
+$txtColor1: rgba(73, 0, 167, 1);
+$txtColor2: rgba(45, 85, 255, 1);
+$txtColor3: rgba(1, 1, 122, 1);
+$txtColor4: #e2fff8;
+$colorRed: #e60023;
+$colorWhite: #fff;
+$fw400: 400;
+$fw500: 500;
+$fw600: 600;
+$fw700: 700;
+$fs19: 19px;
+$lh30: 30px;
+
+* {
+    box-sizing: border-box;
+  }
+
+h1 {
+    font-size: 78px;
+}
+h2 {
+    font-size: 55px;
+}
+h3 {
+    font-size: 40px;
+}
+p, span, div{
+    font-weight: $fw500;
+    font-size: $fs19;
+    line-height: $lh30;
+}
+
+.gh-100{
+    height: var(--height);
+    .vertical-center {
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: var(--height); /* These two lines are counted as one :-)       */
+      
+        display: flex;
+        align-items: center;
+    }
+}
+.gh-90{
+    height: calc( var(--height) * 0.9);
+    .vertical-center {
+        min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: calc( var(--height) * 0.9); /* These two lines are counted as one :-)       */
+      
+        display: flex;
+        align-items: center;
+    }
+}
+.gh-80{
+    height: calc( var(--height) * 0.8);
+    .vertical-center {
+        min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: calc( var(--height) * 0.8); /* These two lines are counted as one :-)       */
+      
+        display: flex;
+        align-items: center;
+    }
+}
+.gp-t-15{
+    padding-top: 15rem;
+}
+.gp-b-15{
+    padding-bottom: 15rem;
+}
+.contentContainer{
+    .pageBackground {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: background-color .4s cubic-bezier(.21,.01,.21,.96);
+        z-index: -100;
+    }
+}
+.color1{
+    h1, h2, h3, h4, h5, h6, p, span, div{
+        transition: color .4s cubic-bezier(.21,.01,.21,.96);
+        color: $txtColor1;
+    }
+    button{
+        background-color: $colorRed;
+        color: $colorWhite;
+    }
+}
+.color2{
+    h1, h2, h3, h4, h5, h6, p, span, div{
+        transition: color .4s cubic-bezier(.21,.01,.21,.96);
+        color: $txtColor2
+    }
+    button{
+        background-color: $txtColor2;
+        color: $colorWhite;
+    }
+}
+.color3{
+    h1, h2, h3, h4, h5, h6, p, span, div{
+        transition: color .4s cubic-bezier(.21,.01,.21,.96);
+        color: $txtColor3
+    }
+    button{
+        background-color: $txtColor3;
+        color: $colorWhite;
+    }
+}
+.color4{
+    h1, h2, h3, h4, h5, h6, p, span, div{
+        transition: color .4s cubic-bezier(.21,.01,.21,.96);
+        color: $txtColor4
+    }
+    button{
+        background-color: $txtColor4;
+        color: $colorWhite;
+    }
+}

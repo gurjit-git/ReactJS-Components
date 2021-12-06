@@ -1,0 +1,152 @@
+/* The Modal (background) */
+.gmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  box-shadow: 0 0 4px -1px #000;
+    -webkit-animation-name: opacity;
+  -webkit-animation-duration: 0.5s;
+  animation-name: opacity;
+  animation-duration: 0.5s
+}
+
+/* Modal Content */
+.gmodalContent {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: 0px solid #888;
+  width: 60%;
+  transform: translateY(50%); 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: top-bottom ;
+  animation-name: top-bottom ;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  
+/*   animation-timing-function: cubic-bezier(.86,.53,.07,.74);
+  animation: cubic1 1s; */
+  
+}
+
+@keyframes top-bottom {
+  from { transform: translateY(-100%); opacity:0; background: #000 }
+  to { transform: translateY(50%); opacity: 1; background: #fff }
+}
+
+@keyframes cubic {
+  0%, 10% { transform: scale(0.9, 0.9); opacity:0 }
+  50%, 60% { transform: scale(0.8, 0.8); opacity: 0.6}
+  100% { transform: scale(1, 1); opacity: 1}
+}
+
+@keyframes cubic1 {
+  0%, 10% { top: 0%; opacity:0 }
+  50%, 60% { top: 30%; opacity: 1; animation-duration: 0.8s;}
+  99%, 100% { top: 10%; opacity: 1; animation-duration: 0.8s;}
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {transform: scale(0.9); opacity:0} 
+  to {transform: scale(1);  opacity:1}
+}
+
+@keyframes animatetop {
+  from {transform: scale(0.9); opacity:0} 
+  to {transform: scale(1);  opacity:1}
+}
+
+@-webkit-keyframes popup {
+  from {transform: scale(0.5); opacity:0} 
+  to {transform: scale(1);  opacity:1}
+}
+
+@keyframes popup {
+  from {transform: scale(0.5); opacity:0} 
+  to {transform: scale(1);  opacity:1}
+}
+
+@-webkit-keyframes opacity {
+  from {opacity:0} 
+  to {opacity:1}
+}
+
+@keyframes opacity {
+  from {opacity:0} 
+  to {opacity:1}
+}
+
+/* @keyframes popup {
+  0%{
+    transform: scale(0);
+  }
+  10%{
+    transform: scale(0.1);
+  }
+  20%{
+    transform: scale(0.2);
+  }
+  30%{
+    transform: scale(0.3);
+  }
+  40%{
+    transform: scale(0.4);
+  }
+  50%{
+    transform: scale(0.5);
+  }
+  60%{
+    transform: scale(0.6);
+  }
+  70%{
+    transform: scale(0.7);
+  }
+  80%{
+    transform: scale(0.8);
+  }
+  90%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+ */
+/* The Close Button */
+.gclose {
+  color: #666;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.gclose:hover,
+.gclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gmodalHeader {
+	margin: 8px 16px;
+    color: #000;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 8px;
+}
+
+.gmodalBody {margin: 10px 16px;}
+
+.gmodalFooter {
+  padding: 2px 16px;
+  color: #000;
+}

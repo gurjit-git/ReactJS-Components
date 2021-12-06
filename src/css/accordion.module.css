@@ -1,0 +1,67 @@
+.gsAccordionItem{
+	margin-bottom: 20px;
+  background: #fff;
+  box-shadow: rgb(140 152 164 / 25%) 0px 1px 6px 0px;
+  border-radius: 8px;
+}
+.gsAccordionItem:hover{
+  border-radius: 8px;
+}
+.gsAccordionTitle{
+	/* background-color: #eee; */
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	font-weight: 500;
+	position: relative;
+}
+/* .gsAccordionTitle.active{
+  border-bottom: 3px solid #cfcfcf;
+} */
+/* .active, .gsAccordionTitle:hover {
+  background-color: #fff;
+} */
+
+.gsAccordionTitle:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 20px;
+  /* display: block; */
+  height: 20px;
+  line-height: 20px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.gsAccordionContent {
+/*   max-height: 0; */
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+.gsAccordionContentInner{
+	padding: 0 20px 17px 20px
+}
+.dropTri{
+	display: none
+}
+/* .active .dropTri{
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 16px solid #cfcfcf;
+  position: absolute;
+  bottom: -16px;
+  display: block
+} */
